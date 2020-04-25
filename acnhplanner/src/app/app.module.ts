@@ -14,13 +14,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    WishlistComponent
+    WishlistComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

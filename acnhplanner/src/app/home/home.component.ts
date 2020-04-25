@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   private data: any;
   private acnhApiUrl: string;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   async getData() {
@@ -32,6 +33,10 @@ export class HomeComponent implements OnInit {
 
   buttonClick() {
     this.getData();
+  }
+
+  goToWishlist() {
+    this.router.navigateByUrl('/wishlist');
   }
 
   ngOnInit() {

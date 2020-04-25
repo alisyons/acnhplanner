@@ -1,17 +1,29 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
 .fish-button {
   background-color: #679fdb;
   border: none;
   border-radius: .5rem;
   color: white;
-  max-height: 3rem;
-  max-width: 6rem;
+  max-height: 4rem;
+  max-width: 8rem;
   padding: .5rem;
+  margin: 1rem;
 }
 
 .card-container {
   width: 40%;
   margin: 1rem;
   padding: 1rem;
+  border-radius: .5rem;
+  background: rgb(103, 159, 208);
+  background: -moz-linear-gradient(90deg, rgba(103, 159, 208, 1) 0%, rgba(32, 221, 142, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(103, 159, 208, 1) 0%, rgba(32, 221, 142, 1) 100%);
+  background: linear-gradient(90deg, rgba(103, 159, 208, 1) 0%, rgba(32, 221, 142, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#679fd0", endColorstr="#20dd8e", GradientType=1);
 }
 
 .card-title {
@@ -23,6 +35,21 @@
   font-family: 'Muli', sans-serif;
 }
 
+.card-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-button {
+  background: transparent;
+  border-radius: 1rem;
+  border: 1px solid white;
+  height: 2rem;
+  color: white;
+  margin-top: 2rem;
+}
+
 .card-icon {
-  width: 2rem;
+  width: 4rem;
 }
