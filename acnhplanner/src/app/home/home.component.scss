@@ -1,6 +1,11 @@
 .cards {
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .fish-button {
@@ -16,6 +21,11 @@
 
 .card-container {
   width: 40%;
+
+  @media (max-width: 600px) {
+    width: auto;
+  }
+
   margin: 1rem;
   padding: 1rem;
   border-radius: .5rem;
