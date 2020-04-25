@@ -4,18 +4,20 @@ import {HomeComponent} from './home/home.component';
 import {WishlistComponent} from './wishlist/wishlist.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import {HeaderComponent} from './header/header.component';
+import {AppComponent} from './app.component';
 
 
 const routes: Routes = [
 
   {
-    path: '**', redirectTo: 'home'
-  },
-  {
-    path: 'home', component: HomeComponent
+    path: '', component: HomeComponent
   },
   {
     path: 'wishlist', component: WishlistComponent
+  },
+  {
+    path: 'test', component: HeaderComponent
   }
 
 ];
@@ -23,7 +25,6 @@ const routes: Routes = [
 @NgModule({
   imports: [
     HttpClientModule,
-    RouterModule.forRoot(routes),
     RouterModule.forRoot(routes, {useHash: true}),
     BrowserModule
   ],

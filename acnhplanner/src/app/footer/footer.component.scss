@@ -1,0 +1,21 @@
+@import "src/styles";
+
+.footer-container {
+  background: $color-basic-blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  width: 6rem;
+  text-align: right;
+}
+
+.version {
+  width: 5rem;
+  text-align: left;
+}

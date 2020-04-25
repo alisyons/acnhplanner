@@ -15,6 +15,16 @@ $color-eggshell: #FCF1E1;
   background-color: $color-basic-blue;
 }
 
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-basic-blue;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
 html, body {
   height: 100%;
   box-sizing: border-box;
@@ -30,3 +40,15 @@ body {
 button {
   font-family: 'Muli', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: #59ffba;
+  font-weight: bolder;
+}
+
+#container {
+  min-height: 100%;
+}
+
+

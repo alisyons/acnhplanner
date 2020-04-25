@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToWishlist() {
-    this.router.navigateByUrl('/wishlist');
+    this.router.navigateByUrl('wishlist');
   }
 
   ngOnInit() {

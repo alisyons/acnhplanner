@@ -1,24 +1,24 @@
 <div class="cards">
 
   <div class="mat-card card-container">
+    <img src="assets/img/HappyFlower.png" alt="Bag-White" border="0" class="card-icon">
     <div class="mat-card-title card-title">Wishlist</div>
     <div class="mat-card-content">
-      <img src="assets/img/whitebag.png" alt="Bag-White" border="0" class="card-icon">
       <div class="card-description">
         Create or view a wishlist of DIY recipes or catalog items you need!
       </div>
-      <div class="card-button-container">
+    </div>
+    <div class="card-button-container">
       <button class="card-button" (click)="goToWishlist()">
         Go to Wishlist
       </button>
-      </div>
     </div>
   </div>
 
   <div class="mat-card card-container">
+    <img src="assets/img/Laughing.png" alt="Bag" border="0" class="card-icon">
     <div class="mat-card-title card-title">Projects</div>
     <div class="mat-card-content">
-      <img src="assets/img/pocket.png" alt="Bag" border="0" class="card-icon">
       <div class="card-description">
         Make a list of all your projects you plan to build on your island and add items you require!
       </div>
@@ -31,7 +31,7 @@
   </div>
 
 </div>
-<div>
+<div class="fish-button-container">
   <button class="fish-button" (click)="buttonClick()">Give me a random funny fish</button>
-  <span>{{randomFish}}</span>
+  <span class="funny-fish">{{randomFish}}</span>
 </div>

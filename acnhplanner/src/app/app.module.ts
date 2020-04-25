@@ -13,8 +13,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { WishlistComponent } from './wishlist/wishlist.component';
-import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy, Location} from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     HomeComponent,
     WishlistComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,7 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule
   ],
   providers: [
-    {provide : LocationStrategy , useClass: HashLocationStrategy}
+    Location, {provide: LocationStrategy, useClass: PathLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
