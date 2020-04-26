@@ -16,6 +16,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 import {HashLocationStrategy, LocationStrategy, PathLocationStrategy, Location} from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HomeComponent,
     WishlistComponent,
     FooterComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

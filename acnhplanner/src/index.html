@@ -10,6 +10,29 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="mat-typography">
-  <app-root></app-root>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBhlC_2ypcOw1_dSUTgrF_wlc92AXsAk90",
+    authDomain: "acnhplanner-db.firebaseapp.com",
+    databaseURL: "https://acnhplanner-db.firebaseio.com",
+    projectId: "acnhplanner-db",
+    storageBucket: "acnhplanner-db.appspot.com",
+    messagingSenderId: "477909959516",
+    appId: "1:477909959516:web:961e204c0fc43b7dc87799",
+    measurementId: "G-NN28BQ0GHY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<app-root></app-root>
 </body>
 </html>
